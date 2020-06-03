@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>background</title>
+
+    <style>
+        div.background {
+            height: 150px;
+            width: 200px;
+            border: 1px solid #000;
+            background: url("http://www.sololearn.com/uploads/css_logo.png") no-repeat 50% 50%;
+            background-size: 100px 100px;
+        }
+
+        #first {
+            border: 2px dotted black;
+            padding: 20px;
+            background: LightBlue;
+            background-clip: padding-box;
+        }
+
+        #second {
+            border: 2px dotted black;
+            padding: 20px;
+            background: LightBlue;
+            background-clip: content-box;
+        }
+
+        #third {
+            background-image: url("http://www.sololearn.com/uploads/css_logo.png");
+            background-clip: content-box;
+            border: 2px dotted black;
+            padding: 20px;
+        }
+
+        #fourth {
+            border: 20px solid rgba(0, 0, 0, 0.3);
+            -moz-background-clip: padding-box;
+            -webkit-background-clip: padding-box;
+            background-clip: padding-box;
+            width: 240px;
+            position: absolute;
+            top: 720px;
+            left: 50px;
+            background-color: white;
+        }
+
+        #fifth {
+            float: left;
+            margin: 4px;
+            width: 400px;
+            height: 300px;
+            background-image: url("http://www.sololearn.com/uploads/css_logo.png"),
+                url("http://www.sololearn.com/uploads/better-code.jpg");
+            background-position: right bottom, left top;
+            background-repeat: no-repeat;
+        }
+
+        #sixth {
+            float: left;
+            margin: 4px 4px 4px 15px;
+            background: url("http://www.sololearn.com/uploads/css_logo.png") right top no-repeat,
+                url("http://www.sololearn.com/uploads/better-code.jpg") left top no-repeat;
+            width: 400px;
+            height: 300px;
+        }
+    </style>
+
+</head>
+
+<body>
+    <!-- Back To Home -->
+    <div class="section">
+        <a href="../index.html">Back to Home</a>
+    </div>
+    <!-- Back To Home end -->
+
+    <h1>background</h1>
+    <h3>background-size :</h3>
+    <div class="background"></div>
+
+    <h3>background-clip :</h3>
+    <div id="first">
+        <p>background-clip: padding-box</p>
+    </div><br />
+    <div id="second">
+        <p>background-clip: content-box</p>
+    </div><br />
+    <div id="third">
+        <p>background-clip: content-box</p>
+    </div><br />
+    <div id="fourth">border: 20px solid rgba(0, 0, 0, 0.3);<br />
+        background-clip: padding-box;<br />
+        width: 240px;<br />
+        position: absolute;<br />
+        top: 720px;<br />
+        left: 50px;<br />
+        background-color: white;</div>
+
+    Some text Some text Some text Some text Some text Some text Some text Some text Some text Some text Some text Some
+    text Some text Some text Some text Some text Some text Some text Some text Some text Some text Some text Some text
+    Some text Some text Some text Some text Some text Some text Some text Some text Some text Some text Some text Some
+    text Some text Some text Some text Some text Some text Some text Some text Some text Some text Some text Some text
+    Some text Some text Some text Some text Some text Some text Some text Some text Some text Some text Some text Some
+    text Some text Some text Some text Some text Some text Some text Some text Some text Some text Some text Some text
+    Some text Some text Some text Some text Some text Some text Some text Some text Some text Some text Some text Some
+    text Some text Some text Some text Some text Some text Some text Some text Some text Some text Some text Some text
+    Some text Some text Some text Some text Some text Some text Some text Some text Some text Some text Some text Some
+    text Some text Some text Some text Some text Some text Some text Some text Some text Some text Some text Some text
+    Some text Some text Some text Some text Some text Some text Some text Some text Some text Some text Some text Some
+    text Some text Some text Some text Some text Some text Some text Some text Some text Some text Some text Some text
+    Some text Some text Some text Some text Some text Some text Some text Some text Some text Some text Some text Some
+    text Some text Some text Some text Some text Some text Some text Some text Some text Some text Some text Some text
+    Some text Some text Some text Some text Some text Some text Some text Some text Some text Some text Some text Some
+    text Some text Some text Some text Some text Some text Some text Some text Some text Some text Some text Some text
+    Some text Some text Some text Some text Some text Some text Some text Some text Some text Some text Some text Some
+    text Some text Some text Some text Some text Some text Some text Some text Some text Some text Some text Some text
+    Some text Some text Some text Some text Some text Some text Some text Some text Some text Some text Some text Some
+    text Some text Some text Some text Some text Some text Some text Some text Some text Some text Some text Some text
+
+
+    <h3>multiple-background-img : </h3>
+    <div id="fifth"></div>
+    <div id="sixth"></div>
+
+</body>
+
+</html>

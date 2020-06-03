@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>transition</title>
+
+    <style>
+        div.transition {
+            width: 50px;
+            height: 50px;
+            background: #32CD32;
+            transition: width 3s;
+            -webkit-transition: width 3s;
+        }
+
+        div.transition:hover {
+            width: 250px;
+        }
+
+        div.transition2 {
+            width: 50px;
+            height: 50px;
+            background: #32CD32;
+            transition: width 3s;
+            transition-timing-function: cubic-bezier(0, 0, 1, 1);
+            -webkit-transition: width 3s;
+            -webkit-transition-timing-function: cubic-bezier(0, 0, 1, 1);
+        }
+
+        div.transition2:hover {
+            width: 250px;
+        }
+
+        #transition {
+            border: 20px solid rgb(252, 125, 231);
+            -moz-background-clip: padding-box;
+            -webkit-background-clip: padding-box;
+            background-clip: padding-box;
+            width: 240px;
+            position: absolute;
+            top: 30px;
+            left: 250px;
+            background-color: rgb(241, 231, 240);
+        }
+
+        #transition2 {
+            border: 20px solid rgb(252, 125, 231);
+            -moz-background-clip: padding-box;
+            -webkit-background-clip: padding-box;
+            background-clip: padding-box;
+            width: 240px;
+            position: absolute;
+            top: 180px;
+            left: 250px;
+            background-color: rgb(241, 231, 240);
+        }
+    </style>
+
+</head>
+
+<body>
+    <!-- Back To Home -->
+    <div class="section">
+        <a href="../index.html">Back to Home</a>
+    </div>
+    <!-- Back To Home end -->
+
+    <h3>transition : </h3>
+    <div class="transition"></div>
+    <div id="transition">width: 50px;<br />
+        height: 50px;<br />
+        background: #32CD32;<br />
+        transition: width 3s;<br />
+        -webkit-transition: width 3s;</div>
+
+    <h3>transition-cubic-bezier : </h3>
+    <div class="transition2"></div>
+    <div id="transition2">width: 50px;<br />
+        height: 50px;<br />
+        background: #32CD32;<br />
+        transition: width 3s;<br />
+        transition-timing-function: cubic-bezier(0, 0, 1, 1);<br />
+        -webkit-transition: width 3s;<br />
+        -webkit-transition-timing-function: cubic-bezier(0, 0, 1, 1);</div>
+
+
+</body>
+
+</html>

@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>alpha-opacity</title>
+
+    <style>
+        img {
+            opacity: 0.5;
+            filter: alpha(opacity=50);
+        }
+
+        #img {
+            border: 20px solid rgb(252, 125, 231);
+            -moz-background-clip: padding-box;
+            -webkit-background-clip: padding-box;
+            background-clip: padding-box;
+            width: 240px;
+            position: absolute;
+            top: 50px;
+            left: 250px;
+            background-color: rgb(241, 231, 240);
+        }
+    </style>
+
+</head>
+
+<body>
+    <!-- Back To Home -->
+    <div class="section">
+        <a href="../index.html">Back to Home</a>
+    </div>
+    <!-- Back To Home end -->
+
+    <h3>alpha-opacity : </h3>
+    <img src="http://www.sololearn.com/uploads/css_logo.png" />
+    <div id="img">border: 20px solid rgba(0, 0, 0, 0.3);<br />
+        background-clip: padding-box;<br />
+        width: 240px;<br />
+        position: absolute;<br />
+        top: 50px;<br />
+        left: 250px;<br />
+        background-color: white;</div>
+</body>
+
+</html>
