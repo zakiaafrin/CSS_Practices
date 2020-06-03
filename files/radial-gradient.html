@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>radial-gradient</title>
+
+    <style>
+        div.first {
+            height: 150px;
+            width: 200px;
+            color: #FFF;
+            background: -moz-radial-gradient(green, yellow, blue);
+            background: -webkit-radial-gradient(green, yellow, blue);
+            background: -ms-radial-gradient(green, yellow, blue);
+        }
+
+        div.second {
+            height: 150px;
+            width: 200px;
+            color: #FFF;
+            background: -moz-radial-gradient(circle, green, yellow, blue);
+            background: -webkit-radial-gradient(circle, green, yellow, blue);
+            background: -ms-radial-gradient(circle, green, yellow, blue);
+        }
+
+        div.third {
+            height: 150px;
+            width: 200px;
+            color: #FFF;
+            background: -moz-radial-gradient(circle, green 40%, yellow 50%, blue 70%);
+            background: -webkit-radial-gradient(circle, green 40%, yellow 50%, blue 70%);
+            background: -ms-radial-gradient(circle, green 40%, yellow 50%, blue 70%);
+        }
+
+        div.fourth {
+            height: 150px;
+            width: 200px;
+            color: #FFF;
+            background: -moz-radial-gradient(top left, green, yellow, blue);
+            background: -webkit-radial-gradient(top left, green, yellow, blue);
+            background: -ms-radial-gradient(top left, green, yellow, blue);
+        }
+
+        div.fifth {
+            height: 150px;
+            width: 200px;
+            color: #FFF;
+            background: -moz-radial-gradient(green 5%, yellow 15%, blue 60%);
+            background: -webkit-radial-gradient(green 5%, yellow 15%, blue 60%);
+            background: -ms-radial-gradient(green 5%, yellow 15%, blue 60%);
+        }
+    </style>
+
+</head>
+
+<body>
+    <!-- Back To Home -->
+    <div class="section">
+        <a href="../index.html">Back to Home</a>
+    </div>
+    <!-- Back To Home end -->
+
+    <h1>radial-gradient</h1>
+    <div class="first">Ellipse (Default)</div><br />
+    <div class="second">Circle</div><br />
+    <div class="third">Color Stops</div><br />
+    <div class="fourth">Top Left</div><br />
+    <div class="fifth">In Percentages</div>
+</body>
+
+</html>
