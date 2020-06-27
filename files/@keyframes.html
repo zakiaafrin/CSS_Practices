@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>@keyframes</title>
+
+    <style>
+        div.keyframes {
+            width: 100px;
+            height: 100px;
+            background-color: red;
+            animation-name: colorchange;
+            animation-duration: 1s;
+            -webkit-animation-name: colorchange;
+            -webkit-animation-duration: 1s;
+        }
+
+        @keyframes colorchange {
+            0% {
+                background-color: red;
+            }
+
+            50% {
+                background-color: green;
+            }
+
+            100% {
+                background-color: blue;
+            }
+        }
+
+        @-webkit-keyframes colorchange {
+            0% {
+                background-color: red;
+            }
+
+            50% {
+                background-color: green;
+            }
+
+            100% {
+                background-color: blue;
+            }
+        }
+
+        div.keyframes2 {
+            animation-name: colorchange2;
+            animation-duration: 5s;
+            height: 100px;
+            background-color: red;
+            -webkit-animation-duration: 5s;
+            -webkit-animation-name: colorchange2;
+        }
+
+        @keyframes colorchange2 {
+            from {
+                width: 0px;
+            }
+
+            to {
+                width: 100px;
+            }
+        }
+
+        @-webkit-keyframes colorchange2 {
+            from {
+                width: 0px;
+            }
+
+            to {
+                width: 100px;
+            }
+        }
+
+        div.keyframes3 {
+            animation-name: colorchange3;
+            animation-duration: 5s;
+            animation-timing-function: linear;
+            height: 100px;
+            width: 0px;
+            background-color: red;
+            -webkit-animation-name: colorchange3;
+            -webkit-animation-duration: 5s;
+            -webkit-animation-timing-function: linear;
+        }
+
+        @keyframes colorchange3 {
+            from {
+                width: 0px;
+            }
+
+            to {
+                width: 100px;
+            }
+        }
+
+        @-webkit-keyframes colorchange3 {
+            from {
+                width: 0px;
+            }
+
+            to {
+                width: 100px;
+            }
+        }
+    </style>
+
+</head>
+
+<body>
+    <!-- Back To Home -->
+    <div class="section">
+        <a href="../index.html">Back to Home</a>
+    </div>
+    <!-- Back To Home end -->
+
+    <h1>@keyframes </h1>
+    <h3>keyframes : </h3>
+    <div class="keyframes"></div>
+
+    <h3>keyframes_2 : </h3>
+    <div class="keyframes2"></div>
+
+    <h3>keyframes_3 : </h3>
+    <div class="keyframes3"></div>
+
+
+</body>
+
+</html>

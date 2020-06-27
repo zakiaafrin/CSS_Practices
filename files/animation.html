@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Animation</title>
+
+    <style>
+        div.animation {
+            animation-name: colorchange;
+            animation-duration: 3s;
+            animation-timing-function: ease-in;
+            animation-delay: 1s;
+            animation-iteration-count: infinite;
+            animation-direction: reverse;
+            height: 100px;
+            width: 0px;
+            background-color: red;
+            -webkit-animation-name: colorchange;
+            -webkit-animation-duration: 3s;
+            -webkit-animation-timing-function: ease-in;
+            -webkit-animation-delay: 1s;
+            -webkit-animation-iteration-count: infinite;
+            -webkit-animation-direction: reverse;
+        }
+
+        @keyframes colorchange {
+            from {
+                width: 0px;
+            }
+
+            to {
+                width: 100px;
+            }
+        }
+
+        @-webkit-keyframes colorchange {
+            from {
+                width: 0px;
+            }
+
+            to {
+                width: 100px;
+            }
+        }
+
+        div.animation2 {
+            animation: colorchange2 3s ease-in 1s infinite reverse;
+            -webkit-animation: colorchange2 3s ease-in 1s infinite reverse;
+            height: 100px;
+            background-color: red;
+            width: 0px;
+        }
+
+        @keyframes colorchange2 {
+            from {
+                width: 0px;
+            }
+
+            to {
+                width: 100px;
+            }
+        }
+
+        @-webkit-keyframes colorchange2 {
+            from {
+                width: 0px;
+            }
+
+            to {
+                width: 100px;
+            }
+        }
+
+        div.animation3 {
+            animation-name: colorchange3;
+            animation-duration: 5s;
+            animation-delay: 2s;
+            animation-iteration-count: infinite;
+            height: 100px;
+            width: 0px;
+            background-color: red;
+            -webkit-animation-name: colorchange3;
+            -webkit-animation-duration: 5s;
+            -webkit-animation-delay: 2s;
+            -webkit-animation-iteration-count: infinite;
+        }
+
+        @keyframes colorchange3 {
+            from {
+                width: 0px;
+            }
+
+            to {
+                width: 100px;
+            }
+        }
+
+        @-webkit-keyframes colorchange3 {
+            from {
+                width: 0px;
+            }
+
+            to {
+                width: 100px;
+            }
+        }
+    </style>
+
+</head>
+
+<body>
+    <!-- Back To Home -->
+    <div class="section">
+        <a href="../index.html">Back to Home</a>
+    </div>
+    <!-- Back To Home end -->
+
+    <h1>Animation </h1>
+    <h3>animation-property : </h3>
+    <div class="animation"></div>
+
+    <h3>animation-property 2 : </h3>
+    <div class="animation2"></div>
+
+    <h3>animation-iteration-count : </h3>
+    <div class="animation3"></div>
+
+
+</body>
+
+</html>

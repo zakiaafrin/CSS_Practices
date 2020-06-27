@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Transform</title>
+
+    <style>
+        div.empty-div {
+            position: relative;
+            height: 100px;
+            width: 100px;
+            margin: 30px;
+            padding: 10px;
+            border: 1px solid black;
+        }
+
+        div.green-div {
+            padding: 50px;
+            position: absolute;
+            background-color: #8bc34a;
+            border: 1px solid white;
+            transform: rotate(15deg);
+            transform-origin: 25% 75%;
+            -webkit-transform: rotate(15deg);
+            -webkit-transform-origin: 25% 75%;
+        }
+
+        div.rotate {
+            width: 200px;
+            height: 100px;
+            margin-top: 30px;
+            background-color: #32CD32;
+            transform: rotate(10deg);
+            -webkit-transform: rotate(10deg);
+        }
+
+        div.positive {
+            width: 200px;
+            height: 100px;
+            margin-top: 30px;
+            background-color: #32CD32;
+            transform: rotate(10deg);
+            -webkit-transform: rotate(10deg);
+        }
+
+        div.negative {
+            width: 200px;
+            height: 100px;
+            margin-top: 30px;
+            background-color: #32CD32;
+            transform: rotate(-10deg);
+            -webkit-transform: rotate(-10deg);
+        }
+
+        div.multiple {
+            width: 200px;
+            height: 100px;
+            background-color: #8BC34A;
+            transform: rotate(45deg) translate(100px);
+            -webkit-transform: rotate(45deg) translate(100px);
+            color: white;
+        }
+
+        div.X {
+            width: 250px;
+            height: 100px;
+            color: white;
+            background-color: green;
+            transform: rotateX(150deg);
+            -webkit-transform: rotateX(150deg);
+        }
+
+        div.Y {
+            width: 250px;
+            height: 100px;
+            color: white;
+            background-color: green;
+            transform: rotateY(150deg);
+            -webkit-transform: rotateY(150deg);
+        }
+
+        div.Z {
+            width: 250px;
+            height: 100px;
+            color: white;
+            background-color: green;
+            transform: rotateZ(150deg);
+            -webkit-transform: rotateZ(150deg);
+        }
+    </style>
+
+</head>
+
+<body>
+    <!-- Back To Home -->
+    <div class="section">
+        <a href="../index.html">Back to Home</a>
+    </div>
+    <!-- Back To Home end -->
+
+    <h1>Transform : </h1>
+    <h3>transform-origin : </h3>
+    <div class="empty-div">
+        <div class="green-div"></div>
+    </div>
+
+    <h3>transform-rotate : </h3>
+    <div class="rotate"></div>
+
+    <h3>transform-rotate2 : </h3>
+    <div class="positive"></div>
+    <br />
+    <div class="negative"></div>
+
+    <h3>multiple-transform : </h3>
+    <div class="multiple"></div><br /><br /><br /><br /><br /><br /><br />
+
+    <h3>3D Transform : </h3>
+    <div class="X">rotateX(150deg)</div><br />
+    <div class="Y">rotateY(150deg)</div><br /><br /><br /><br />
+    <div class="Z">rotateZ(150deg)</div>
+
+</body>
+
+</html>

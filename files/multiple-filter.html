@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Multiple Filter</title>
+
+    <style>
+        .filtered {
+            filter: blur(5px) hue-rotate(180deg);
+        }
+
+        .filtered2 {
+            filter: saturate(30%) drop-shadow(5px 9px 2px gray) blur(1px);
+        }
+
+        .filtered3 {
+            filter: brightness(150%) sepia(100%);
+        }
+    </style>
+
+</head>
+
+<body>
+    <!-- Back To Home -->
+    <div class="section">
+        <a href="../index.html">Back to Home</a>
+    </div>
+    <!-- Back To Home end -->
+
+    <h1>Multiple Filter</h1>
+    <h3>multiple-filter : </h3>
+    <div>
+        <img class="original" src="http://www.sololearn.com/images/tree.jpg">
+        <img class="filtered" src="http://www.sololearn.com/images/tree.jpg">
+    </div>
+
+    <h3>multiple-filter 2 : </h3>
+    <div>
+        <img class="original2" src="http://www.sololearn.com/images/tree.jpg">
+        <img class="filtered2" src="http://www.sololearn.com/images/tree.jpg">
+    </div>
+
+    <h3>multiple-filter 3 : </h3>
+    <div>
+        <img class="original3" src="http://www.sololearn.com/images/tree.jpg">
+        <img class="filtered3" src="http://www.sololearn.com/images/tree.jpg">
+    </div>
+
+</body>
+
+</html>
